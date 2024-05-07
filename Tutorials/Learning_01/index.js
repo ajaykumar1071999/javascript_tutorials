@@ -23,4 +23,11 @@ var accountStates;
 accountEmail="ajaykumar101999@gmail.com";
 accountPassword="Nic@123";
 
-// console.table([accountNumber,accountEmail,accountPassword,accountCity,accountState,accountStates])
+console.table([
+  accountNumber,
+  accountEmail,
+  accountPassword,
+  accountCity,
+  accountState,
+  accountStates,
+]);
