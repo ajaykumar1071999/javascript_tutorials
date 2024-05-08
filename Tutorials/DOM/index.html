@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="" />
   </head>
   <body>
-    <h1 id="first-heading">First Heading</h1>
+    <!-- <h1 id="first-heading">First Heading</h1>
     <h1 id="first-heading">First Heading</h1>
     <h1 id="first-heading">First Heading</h1>
     <h1 id="first-heading">First Heading</h1>
     <p className="first-para">This is first paragraph</p>
-    <p className="first-para">This is first paragraph</p>
+    <p className="first-para">This is first paragraph</p> -->
+
+    <h1>Hii Ajay</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
     <script>
       //   const selectH1 = document.getElementById("first-heading").innerHTML;
       //   const selectH1 = document.getElementById("first-heading").innerText;
@@ -22,11 +26,36 @@
       //   console.log(selectH1);
 
       // const quesrySelect=document.querySelector('h1')
-      const quesrySelect = document.querySelectorAll("p");
-      console.log(quesrySelect)
-    //   const data = quesrySelect.map((item) => item);
-    //   console.log("data", data);
-      quesrySelect.style.color = "green";
+      // const quesrySelect = document.querySelectorAll("p");
+      // console.log(quesrySelect)
+      //   const data = quesrySelect.map((item) => item);
+      //   console.log("data", data);
+      // quesrySelect.style.color = "green";
+
+      const timeOut = function () {
+        console.log("Set Time out");
+      };
+      // const timeOutId = setTimeout(timeOut, 2000);
+
+      // const clearTimeOutFunc = function () {
+      //   clearTimeout(timeOutId);
+      //   console.log("Time out stoped")
+      // };
+      // // document.querySelector("#stop").addEventListener("click", clearTimeOut);
+      // const selectedBtn = document.querySelector("#stop");
+      // console.log(selectedBtn);
+
+      // selectedBtn.addEventListener("click", clearTimeOutFunc);
+
+      const intervalFunc = function () {
+        console.log("interval running");
+      };
+      const intervalId = setInterval(intervalFunc, 2000);
+      const clearInterVal = function () {
+        clearInterval(intervalId);
+        console.log("stop interval");
+      };
+      document.querySelector("#stop").addEventListener("click", clearInterVal);
     </script>
   </body>
 </html>
